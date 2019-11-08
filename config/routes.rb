@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'results/my_results' 
+
+
+
+
   get 'home/index'
 
   root 'home#index'
