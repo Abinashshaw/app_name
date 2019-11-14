@@ -1,0 +1,8 @@
+<% if @customer.errors.any? %>
+    <h2><%= pluralize(@customer.error.count, "error")%> prevented this customer information from being saved </h2>
+    <ul>
+        <% @customer.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+    </ul>
+<% end %>

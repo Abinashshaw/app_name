@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :images
+  resources :customers
   get 'students/index'
   get 'employees/index'
   get 'users/index'
