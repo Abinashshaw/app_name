@@ -1,4 +1,8 @@
 <h1>Listing all Customers</h1>
+<%= form_tag customers_path, :method => 'get' do %>
+  <%= text_field_tag :search, params[:search] %>
+  <%= submit_tag "Search" %>
+<% end %>
 <p><%= link_to "create new Customer", new_customer_path %></p>
 <p><%= link_to 'home page', root_path %></p>
 <table>
